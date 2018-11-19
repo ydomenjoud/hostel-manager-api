@@ -1,0 +1,27 @@
+{
+  "name": "users",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "rooms": {
+      "type": "hasAndBelongsToMany",
+      "model": "rooms",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "votes": {
+      "type": "hasAndBelongsToMany",
+      "model": "votes",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
