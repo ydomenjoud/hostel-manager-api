@@ -11,7 +11,7 @@
     "rooms": {
       "type": "hasAndBelongsToMany",
       "model": "rooms",
-      "foreignKey": "",
+      "foreignKey": "userId",
       "options": {
         "nestRemoting": true
       }
@@ -19,9 +19,22 @@
     "votes": {
       "type": "hasAndBelongsToMany",
       "model": "votes",
-      "foreignKey": ""
+      "foreignKey": "userId"
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }
