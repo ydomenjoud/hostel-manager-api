@@ -1,5 +1,5 @@
 {
-  "name": "scrumserver",
+  "name": "hostel-manager-api",
   "version": "1.0.0",
   "main": "server/server.js",
   "engines": {
@@ -29,5 +29,5 @@
     "url": ""
   },
   "license": "UNLICENSED",
-  "description": "scrumserver"
+  "description": "hostel manager api"
 }
