@@ -3,7 +3,8 @@
 Site de gestion de chambres d'un hôtel à mettre sur github en public
 
 # API
-l'api est disponible ici https://github.com/ydomenjoud/hostel-manager-api
+  * l'api est disponible ici https://github.com/ydomenjoud/hostel-manager-api
+  * un exemple de ce qui est attendu est disponible ici : https://hostel-manager.netlify.app
 
 mise en place :
 ```
